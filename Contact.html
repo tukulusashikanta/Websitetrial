@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sri Sai Ram Enterprises | Safety Equipment Specialists</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Contact Sri Sai Ram Enterprises for breath analyzers, metal detectors, walkie-talkies and traffic safety equipment. Reach our sales and support team for enquiries and pricing.">
+    <meta name="keywords" content="contact, Sri Sai Ram Enterprises, breath analyzer enquiries, metal detector enquiries, safety equipment contact">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="/Contact.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Sri Sai Ram Enterprises | Safety Equipment Suppliers">
+    <meta property="og:description" content="Reach our sales and support team for breath analyzers, metal detectors and traffic safety equipment enquiries and pricing.">
+    <meta property="og:image" content="/images/Banner2.jpg">
+    <meta property="og:url" content="/Contact.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Sri Sai Ram Enterprises">
+    <meta name="twitter:description" content="Reach our sales and support team for equipment enquiries and pricing.">
+    <meta name="twitter:image" content="/images/Banner2.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        
+        :root {
+            --primary: #0066c0;
+            --secondary: #ff9900;
+            --dark: #131921;
+            --light: #f3f3f3;
+            --success: #25d366;
+            --white: #ffffff;
+            --gray: #6c757d;
+            --light-gray: #f8f9fa;
+        }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6; 
+            color: #333; 
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+        
+        /* Navigation */
+        nav { 
+            background: var(--dark); 
+            color: var(--white); 
+            padding: 0.8rem 1rem;
+            position: sticky; 
+            top: 0; 
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+        
+        .logo { 
+            font-size: 1.5rem; 
+            font-weight: 700; 
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 8px;
+            color: var(--white);
+        }
+        
+        .nav-links { 
+            display: flex; 
+            list-style: none; 
+        }
+        
+        .nav-links li { 
+            margin-left: 1.8rem; 
+            position: relative;
+        }
+        
+        .nav-links a { 
+            color: var(--white); 
+            text-decoration: none; 
+            transition: color 0.3s; 
+            font-weight: 500;
+            padding: 0.3rem 0;
+        }
+        
+        .nav-links a:hover { 
+            color: var(--secondary); 
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .contact-hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.9)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+        
+        .contact-hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .contact-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        
+        .contact-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Contact Container */
+        .contact-container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+        }
+        
+        @media (max-width: 992px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Contact Info Sidebar */
+        .contact-info-sidebar {
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 2rem;
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+        }
+        
+        .contact-info-sidebar h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary);
+            display: inline-block;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.8rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .contact-method:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .contact-icon {
+            background: var(--light-gray);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon i {
+            font-size: 1.2rem;
+            color: var(--primary);
+        }
+        
+        .contact-details h3 {
+            color: var(--dark);
+            margin-bottom: 0.3rem;
+            font-size: 1.1rem;
+        }
+        
+        .contact-details p {
+            color: var(--gray);
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            display: inline-block;
+        }
+        
+        .contact-link:hover {
+            color: var(--secondary);
+        }
+        
+        /* Contact Form */
+        .contact-form-container {
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 2.5rem;
+        }
+        
+        .contact-form-container h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary);
+            display: inline-block;
+        }
+        
+        .form-description {
+            color: var(--gray);
+            margin-bottom: 2rem;
+        }
+        
+        .contact-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-group.full-width {
+            grid-column: span 2;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-group.full-width {
+                grid-column: span 1;
+            }
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--dark);
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border 0.3s, box-shadow 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(0, 102, 192, 0.1);
+        }
+        
+        .submit-btn {
+            background: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-column: span 2;
+        }
+        
+        .submit-btn:hover {
+            background: #0056a3;
+            transform: translateY(-2px);
+        }
+        
+        .submit-btn i {
+            margin-right: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .submit-btn {
+                grid-column: span 1;
+            }
+        }
+        
+        /* Map Section */
+        .map-section {
+            max-width: 1200px;
+            margin: 0 auto 3rem;
+            padding: 0 1rem;
+        }
+        
+        .map-container {
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        
+        .map-header {
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .map-header h2 {
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+        }
+        
+        .map-header h2 i {
+            margin-right: 10px;
+            color: var(--secondary);
+        }
+        
+        .map-iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+        
+        /* Business Hours */
+        .hours-section {
+            max-width: 1200px;
+            margin: 0 auto 3rem;
+            padding: 0 1rem;
+        }
+        
+        .hours-card {
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 2rem;
+        }
+        
+        .hours-card h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary);
+            display: inline-block;
+        }
+        
+        .hours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .hour-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.8rem 0;
+            border-bottom: 1px dashed #eee;
+        }
+        
+        .hour-item:last-child {
+            border-bottom: none;
+        }
+        
+        .day {
+            font-weight: 500;
+            color: var(--dark);
+        }
+        
+        .time {
+            color: var(--gray);
+        }
+        
+        .highlight {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+        
+        /* Footer */
+        footer { 
+            background: var(--dark); 
+            color: var(--white); 
+            text-align: center; 
+            padding: 2.5rem 1rem;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+        
+        .footer-links li {
+            margin: 0 1rem;
+        }
+        
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 1.5rem;
+        }
+        
+        /* Floating WhatsApp Button */
+        .whatsapp-container {
+            position: fixed; 
+            bottom: 25px; 
+            right: 25px; 
+            display: flex; 
+            align-items: center;
+            background: var(--success); 
+            color: var(--white); 
+            padding: 12px 20px; 
+            border-radius: 50px;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3); 
+            font-family: Arial, sans-serif; 
+            font-weight: 600;
+            cursor: pointer; 
+            text-decoration: none; 
+            z-index: 1000; 
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        
+        .whatsapp-container:hover { 
+            background: #20b958; 
+            transform: scale(1.05);
+        }
+        
+        .whatsapp-container img { 
+            width: 28px; 
+            height: 28px; 
+            margin-right: 8px; 
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .nav-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-links {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .nav-links li {
+                margin: 0.5rem 0.8rem;
+            }
+            
+            .contact-form-container {
+                padding: 1.5rem;
+            }
+            
+            .contact-info-sidebar {
+                position: static;
+            }
+            
+            .map-iframe {
+                height: 300px;
+            }
+            
+            .whatsapp-container {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .whatsapp-container img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .contact-hero {
+                padding: 3rem 1rem;
+            }
+            
+            .contact-hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .contact-method {
+                flex-direction: column;
+            }
+            
+            .contact-icon {
+                margin-right: 0;
+                margin-bottom: 0.8rem;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+            }
+            
+            .footer-links li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Sri Sai Ram Enterprises",
+            "url": "https://www.srisairamsafety.com/",
+            "logo": "/images/favicon.jpeg",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-XXXXXXXXXX",
+                "contactType": "customer service"
+            }
+        }
+        </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                Sri Sai Ram Enterprises
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="About.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="Contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="contact-hero-content">
+            <h1>Get In Touch With Us</h1>
+            <p>Have questions about our safety equipment? Our team is ready to assist you with expert advice and solutions tailored to your needs.</p>
+        </div>
+    </section>
+
+    <!-- Main Contact Container -->
+    <div class="contact-container">
+        <!-- Contact Info Sidebar -->
+        <div class="contact-info-sidebar">
+            <h2>Contact Information</h2>
+            
+            <div class="contact-method">
+                <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>Phone</h3>
+                    <p>Call us for immediate assistance</p>
+                    <a href="tel:+918500240474" class="contact-link">+91 85002 40474</a>
+                </div>
+            </div>
+            
+            <div class="contact-method">
+                <div class="contact-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>WhatsApp</h3>
+                    <p>Message us directly</p>
+                    <a href="https://wa.me/918500240474?text=Hello%20I%20need%20more%20details%20about%20your%20safety%20equipment" 
+                       class="contact-link" target="_blank">Chat on WhatsApp</a>
+                </div>
+            </div>
+            
+            <div class="contact-method">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>Location</h3>
+                    <p>Based in Hyderabad, serving all of India</p>
+                    <p>Hyderabad, Telangana, India</p>
+                </div>
+            </div>
+            
+            <div class="contact-method">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>Email</h3>
+                    <p>Send us your inquiries</p>
+                    <a href="mailto:info@srisairamsafety.com" class="contact-link">info@srisairamsafety.com</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+            <p class="form-description">Fill out the form below and we'll get back to you as soon as possible.</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                </div>
+                
+                <div class="form-group">
+                    <label for="organization">Organization</label>
+                    <input type="text" id="organization" name="organization" placeholder="Your company/organization">
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="interest">Product Interest</label>
+                    <select id="interest" name="interest">
+                        <option value="">Select a product category</option>
+                        <option value="breath-analyzers">Breath Analyzers</option>
+                        <option value="metal-detectors">Metal Detectors</option>
+                        <option value="road-safety">Road Safety Equipment</option>
+                        <option value="other">Other Safety Equipment</option>
+                        <option value="multiple">Multiple Products</option>
+                    </select>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell us about your requirements..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Business Hours Section -->
+    <div class="hours-section">
+        <div class="hours-card">
+            <h2>Business Hours</h2>
+            <div class="hours-grid">
+                <div>
+                    <div class="hour-item">
+                        <span class="day">Monday - Friday</span>
+                        <span class="time">9:00 AM - 6:00 PM</span>
+                    </div>
+                    <div class="hour-item">
+                        <span class="day">Saturday</span>
+                        <span class="time">10:00 AM - 4:00 PM</span>
+                    </div>
+                    <div class="hour-item">
+                        <span class="day">Sunday</span>
+                        <span class="time highlight">By Appointment Only</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="hour-item">
+                        <span class="day">Emergency Support</span>
+                        <span class="time highlight">24/7 Available</span>
+                    </div>
+                    <div class="hour-item">
+                        <span class="day">Response Time</span>
+                        <span class="time">Within 2 hours</span>
+                    </div>
+                    <div class="hour-item">
+                        <span class="day">Service Areas</span>
+                        <span class="time">All India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Map Section -->
+    <div class="map-section">
+        <div class="map-container">
+            <div class="map-header">
+                <h2><i class="fas fa-map-marked-alt"></i> Our Location</h2>
+            </div>
+            <iframe 
+                class="map-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.4309205103286!2d78.53340829999999!3d17.391095699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb991bffffff87%3A0x2a515690212ad08e!2sSri%20Sai%20Ram%20Enterprises!5e0!3m2!1sen!2sin!4v1766650575085!5m2!1sen!2sin" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Sri Sai Ram Enterprises Location in Hyderabad">
+            </iframe>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.4309205103286!2d78.53340829999999!3d17.391095699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb991bffffff87%3A0x2a515690212ad08e!2sSri%20Sai%20Ram%20Enterprises!5e0!3m2!1sen!2sin!4v1766650575085!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo" style="justify-content: center; margin-bottom: 1rem;">
+                <i class="fas fa-shield-alt"></i>
+                Sri Sai Ram Enterprises
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="https://wa.me/918500240474?text=Hello%20I%20need%20more%20details" target="_blank">Support</a></li>
+            </ul>
+            <p class="copyright">&copy; 2025 Sri Sai Ram Enterprises. All Rights Reserved.</p>
+            <p class="copyright" style="font-size: 0.8rem; margin-top: 0.5rem;">Your Safety, Our Priority</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918500240474?text=Hello%20I%20need%20more%20details%20about%20your%20safety%20equipment" 
+        class="whatsapp-container" 
+        target="_blank"
+        aria-label="Contact us on WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        <span>WhatsApp Us</span>
+    </a>
+    
+    <script>
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const phone = formData.get('phone');
+            
+            // In a real application, you would send this data to a server
+            // For demonstration, we'll show a success message and create a WhatsApp link
+            
+            // Create WhatsApp message
+            const message = `Hello, I'm ${name}. I'm interested in your safety equipment. My phone number is ${phone}.`;
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappURL = `https://wa.me/918500240474?text=${encodedMessage}`;
+            
+            // Show success message
+            alert('Thank you for your inquiry! We will contact you shortly. Redirecting to WhatsApp for immediate assistance...');
+            
+            // Redirect to WhatsApp
+            window.open(whatsappURL, '_blank');
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // Add click tracking for analytics (example)
+        document.querySelectorAll('.contact-link').forEach(link => {
+            link.addEventListener('click', function() {
+                const action = this.textContent;
+                console.log(`Contact action: ${action}`);
+                // In a real application, you would send this to your analytics platform
+            });
+        });
+    </script>
+</body>
+</html>
